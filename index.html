@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>To do's</title>
+</head>
+
+<body onload="reset()">
+
+    <header>
+        <h1>
+            My to do's
+        </h1>
+    </header>
+
+    <div class="add-task">
+
+        <div class="relevance-container">
+            <div>
+                <label for="light-rel" style="color: rgb(174, 156, 253);">Light</label>
+                <input type="radio" name="relevance" id="light-rel" value="light">
+            </div>
+
+            <div>
+                <label for="normal-rel" style="color: darkslategray;">Normal</label>
+                <input type="radio" name="relevance" id="normal-rel" value="normal">
+            </div>
+
+            <div>
+                <label for="high-rel" style="color: rgb(230, 25, 25);">High</label>
+                <input type="radio" name="relevance" id="high-rel" value="high">
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="title">Subject: </label>
+            <input type="text" name="title" id="title">
+
+            <label for="description">Description: </label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <button id="btn-add">Add task</button>
+
+    </div>
+
+    <div class="task-container">
+
+    </div>
+
+    <footer>
+
+        <small>
+            &copy;Alperonoberto 2022
+        </small>
+
+        <div class="contacto">
+
+            <img id="github" src="./github.png" alt="github">
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
